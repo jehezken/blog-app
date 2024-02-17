@@ -13,7 +13,7 @@ import React from "react";
 export const RightColumn = () => {
 	return (
 		<div className="sticky top-6 hidden h-fit w-full xl:block">
-			<div className="h-fit w-full rounded-2xl border border-neutral-600 bg-neutral-900 p-6">
+			<div className="h-fit w-full rounded-2xl border border-neutral-800 bg-neutral-900 p-6">
 				<h3 className="my-4 font-semibold">90+Framer Shadows</h3>
 				<p className="my-3 text-xs">
 					Stop worrying about perfecting the shadows, just Copy & Paste from the 80+
@@ -58,7 +58,7 @@ export const RightColumn = () => {
 					<Archive className="size-4 cursor-pointer" />
 				</div>
 			</div>
-			<div className="mt-6 h-fit w-full rounded-2xl border border-neutral-600 bg-neutral-900 p-6">
+			<div className="mt-6 h-fit w-full rounded-2xl border border-neutral-800 bg-neutral-900 p-6">
 				<div className="relative h-32 w-full overflow-hidden rounded-lg">
 					<img
 						src="https://portfolioblog-teal.vercel.app/_next/image?url=%2Fgame.jpg&w=1080&q=75"
