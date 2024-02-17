@@ -4,7 +4,7 @@ import { LeftColumnForm } from "./LeftColumnForm";
 
 export const LeftColumn = () => {
 	return (
-		<div className="top-6 h-fit w-full rounded-2xl border border-neutral-600 bg-neutral-900 p-6 xl:sticky">
+		<div className="top-6 h-fit w-full rounded-2xl border border-neutral-600 bg-neutral-900 p-6 md:sticky">
 			<LetfColumnAvatar />
 			<h1 className="mt-3 text-lg font-black">Joscript Brown</h1>
 			<a href="" className="mt-2 inline-block text-xs">
