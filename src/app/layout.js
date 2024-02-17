@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body className={onest.className}>
 				<div className="min-h-screen w-full bg-neutral-950 text-neutral-300">
-					<div className="mx-auto grid max-w-7xl gap-6 p-6 md:grid-cols-[20rem_1fr] xl:grid-cols-[20rem_minmax(37rem,_1fr)_auto]">
+					<div className="mx-auto grid max-w-7xl gap-6 p-6 md:grid-cols-[18rem_1fr] xl:grid-cols-[20rem_minmax(37rem,_1fr)_auto]">
 						<LeftColumn />
 						{children}
 						<RightColumn />

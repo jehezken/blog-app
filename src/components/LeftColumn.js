@@ -13,7 +13,7 @@ export const LeftColumn = () => {
 			<a href="" className="mt-1 inline-block text-xs">
 				JoscriptBrown.com 🌍
 			</a>
-			<ul className="my-4 flex gap-1">
+			<ul className="my-4 flex flex-wrap gap-1">
 				<li className="flex h-6 w-fit items-center justify-center rounded-md bg-neutral-950 px-2">
 					<p className="text-xs font-semibold">ReactJS</p>
 				</li>
