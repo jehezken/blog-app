@@ -1,9 +1,28 @@
-import { Code2 } from "lucide-react";
+"use client";
+
 import React from "react";
+import { Code2 } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Page() {
 	return (
-		<main className="h-auto w-full rounded-2xl py-6">
+		<motion.main
+			initial={{
+				y: 10,
+				opacity: 0,
+			}}
+			animate={{
+				y: 0,
+				opacity: 1,
+				transition: {
+					duration: 0.3,
+					delay: 0.2,
+					type: "spring",
+					stiffness: 200,
+				},
+			}}
+			className="h-auto w-full rounded-2xl py-6"
+		>
 			<div className="flex gap-4">
 				<Code2 className="size-16 stroke-1" />
 				<div className="flex flex-col">
@@ -85,6 +104,6 @@ export default function Page() {
 					</div>
 				</div>
 			</div>
-		</main>
+		</motion.main>
 	);
 }

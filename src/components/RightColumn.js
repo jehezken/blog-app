@@ -1,3 +1,5 @@
+"use client";
+
 import {
 	ActivitySquare,
 	Archive,
@@ -9,10 +11,27 @@ import {
 	Youtube,
 } from "lucide-react";
 import React from "react";
+import { motion } from "framer-motion";
 
 export const RightColumn = () => {
 	return (
-		<div className="sticky top-6 hidden h-fit w-full xl:block">
+		<motion.div
+			initial={{
+				y: 10,
+				opacity: 0,
+			}}
+			animate={{
+				y: 0,
+				opacity: 1,
+				transition: {
+					duration: 0.3,
+					delay: 0.4,
+					type: "spring",
+					stiffness: 200,
+				},
+			}}
+			className="sticky top-6 hidden h-fit w-full xl:block"
+		>
 			<div className="h-fit w-full rounded-2xl border border-neutral-800 bg-neutral-900 p-6">
 				<h3 className="my-4 font-semibold">90+Framer Shadows</h3>
 				<p className="my-3 text-xs">
@@ -74,6 +93,6 @@ export const RightColumn = () => {
 					Get Now @20% OFF
 				</button>
 			</div>
-		</div>
+		</motion.div>
 	);
 };

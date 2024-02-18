@@ -1,10 +1,28 @@
+"use client";
+
 import React from "react";
 import { LetfColumnAvatar } from "./LetfColumnAvatar";
 import { LeftColumnForm } from "./LeftColumnForm";
+import { motion } from "framer-motion";
 
 export const LeftColumn = () => {
 	return (
-		<div className="top-6 h-fit w-full rounded-2xl border border-neutral-800 bg-neutral-900 p-6 md:sticky">
+		<motion.div
+			initial={{
+				y: 10,
+				opacity: 0,
+			}}
+			animate={{
+				y: 0,
+				opacity: 1,
+				transition: {
+					duration: 0.3,
+					type: "spring",
+					stiffness: 200,
+				},
+			}}
+			className="top-6 h-fit w-full rounded-2xl border border-neutral-800 bg-neutral-900 p-6 md:sticky"
+		>
 			<LetfColumnAvatar />
 			<h1 className="mt-3 text-lg font-black">Joscript Brown</h1>
 			<a href="" className="mt-2 inline-block text-xs">
@@ -52,7 +70,7 @@ export const LeftColumn = () => {
 					<svg
 						stroke="currentColor"
 						fill="currentColor"
-						stroke-width="0"
+						strokeWidth="0"
 						viewBox="0 0 256 256"
 						height="1em"
 						width="1em"
@@ -79,6 +97,6 @@ export const LeftColumn = () => {
 					<small className="text-[9px]">Sep 2016 - January 2020</small>
 				</p>
 			</ul>
-		</div>
+		</motion.div>
 	);
 };
